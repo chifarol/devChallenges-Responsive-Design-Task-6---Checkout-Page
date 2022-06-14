@@ -1,0 +1,209 @@
+*{ padding:0; margin:0; box-sizing: border-box; list-style-type: none; text-decoration: none;}
+
+body{
+     padding: 64px 200px;
+     font-family: montserrat, sans-serif;
+     font-weight:600;
+     color:#333333;
+ }
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 113px;}
+h1{
+    font-size:36px;
+    margin: 50px 0;;
+}
+fieldset{
+    border: none;
+    margin:20px 0;
+    position: relative;
+}
+legend{
+    font-size:18px;
+}
+fieldset input, fieldset select{
+    width:100%;
+    border:1px solid #828282;
+    height: 56px;
+    padding: 18px 35px;
+    border-radius: 12px;
+}
+#email{
+    background: url("../images/email.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+#phone{
+    background: url("../images/phone.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+#phone{
+    background: url("../images/phone.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+#phone{
+    background: url("../images/phone.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+#phone{
+    background: url("../images/phone.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+#fullname{
+    background: url("../images/account-profile-circle.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+#address{
+    background: url("../images/home.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+#city{
+    background: url("../images//location-city.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+  }
+  .split-fit{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+  }
+#country{
+    background: url("../images/country-globe.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+    margin-right:10px;
+  }
+#postal-code{
+    background: url("../images/postal-code.svg") no-repeat ;
+    background-position: 7px 16px;
+    background-size: 20px;
+    margin-left:10px;
+  }
+.submit-button{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 23px 0;
+    cursor:pointer;
+}
+#submit{
+    width:166px;
+    height:54px;
+    border-radius: 12px;
+    border: 0 solid ;
+    background-color: #F2994A;
+}
+.form label{
+    display: block;
+    font-size:12px;
+    margin: 20px 0 10px 0;
+}
+.save-option{
+    display: flex;
+    align-items: center;
+}
+.save-option label{
+margin: 0 10px;
+}
+.cart-container{
+    width:383px;
+    height:535px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 3%;
+    padding: 10px 29px;
+}
+.cart-item{
+    margin: 15px 0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cart-item img{
+width:130px;
+border-radius: 10%;
+}
+.cart-details{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+font-size:16px;
+}
+.price{
+    color:#F2994A;
+}
+
+.price-cancelled{
+    text-decoration: line-through;
+    font-size: 12px;
+    margin: 0 10px;
+}
+.qty-controller{
+    margin-top: 40px;
+    display:flex;
+    border:1px solid #828282;
+    padding:10px;
+    width:130px;
+    height:40px;
+    border-radius:12px;
+    justify-content: space-between;
+}
+.operator{
+    width:21px;
+    height:21px;
+    background-color: #E0E0E0;
+    color:#828282;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.shipping{
+    margin-top: 100px;
+   display:flex;
+   justify-content: space-between;
+   border-top: 1px solid #BDBDBD;
+   padding: 11px;
+}
+.total{
+   border-top: 1px solid #BDBDBD;
+   display:flex;
+   justify-content: space-between;
+   padding: 11px;
+}
+footer{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+/* medium screen */ 
+ @media screen and (max-width: 768px) and (min-width: 481px) {  } 
+ /* small screen */  
+ @media screen and (max-width: 480px) {
+h1{
+    font-size:24px;
+    margin: 20px 0;
+}
+body{
+    padding: 12px;
+}
+.container{
+display: flex;
+flex-direction: column-reverse;
+flex-wrap: wrap;
+width: 100%;
+}
+    .cart-container{
+        width:100%;
+        height:auto;
+    }
+  }

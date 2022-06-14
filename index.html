@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <div class="container">
+        <div class="main">
+            <div class="form">
+                <form action="">
+                    <fieldset>
+                        <legend>Contact information</legend>
+                        <label for="email">E-mail</label>
+                        <!-- <i><img src="images/email.svg" alt=""></i> -->
+                        <input type="email" name="email" id="email" placeholder="Enter your email...">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone...">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Shipping address</legend>
+                        <label for="fullname">Full name</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="your fullname...">
+                        <label for="address">Address name</label>
+                        <input type="text" name="address" id="address" placeholder="your address...">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="your city...">
+                        <div class="split-fit">
+                            <div>
+                                <label for="country">Country</label>
+                                <select name="country" id="country">
+                                    <option value="" disabled selected>your country...</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="postal-code">Postal code</label>
+                                <input type="text" name="postal-code" id="postal-code"
+                                    placeholder="your postal code...">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="save-option">
+                        <input type="checkbox" name="save" id="save">
+                        <label for="save">Save this information for next time</label>
+                    </div>
+                    <div class="submit-button">
+                        <input type="submit" value="Continue" id="submit">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="images/photo1.png" alt="">
+                <div class="cart-details">
+                    <p class="title">Vintage Backbag</p>
+                    <div class="price-wrapper">
+                        <span class="price">$54.99</span>
+                        <span class="price-cancelled">$94.99</span>
+                    </div>
+                    <div class="qty-controller">
+                        <div class="operator">-</div>
+                        <div class="qty">1</div>
+                        <div class="operator">+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="images/photo2.png" alt="">
+                <div class="cart-details">
+                    <p class="title">Levi Shoes</p>
+                    <div class="price-wrapper">
+                        <span class="price">$74.99</span>
+                        <span class="price-cancelled">$124.99</span>
+                    </div>
+                    <div class="qty-controller">
+                        <div class="operator">-</div>
+                        <div class="qty">1</div>
+                        <div class="operator">+</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="shipping">
+                <h4>Shipping</h4>
+                <p>$19</p>
+            </div>
+            <div class="total">
+                <h4>Total</h4>
+                <p>$148.99</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>created by <em>ilodigwechinaza@gmail.com | devChallenges.io</em></p>
+    </footer>
+
+</body>
+
+</html>
